@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+            Array Concepts
+        </title>
+    </head>
+    <body>
+        <p>How to declare the Arrays ? 
+            <h4 id="array_declaration"></h4>
+        </p>
+        <hr>
+        <p>How to fetch the first element of the Array ? 
+            <h4 id="array_first_element"></h4>
+        </p>
+        <hr>
+        <p>How to fetch the second element of the Array ? 
+            <h4 id="array_second_element"></h4>
+        </p>
+        <hr>
+        <p>How to fetch the length of the Array ? 
+            <h4 id="array_length"></h4>
+        </p>
+        <hr>
+        <p>How to loop the Array ? 
+            <h4 id="array_loop"></h4>
+        </p>
+        <hr>
+        <p>How to add a element at the end of the Array ? 
+            <h4 id="array_elem_end"></h4>
+        </p>
+        <hr>
+        <p>How to declare Arrays with alphabets ? 
+            <h4 id="array_alpha"></h4>
+        </p>
+        <hr>
+    </body>
+        <script>
+            //How to declare the arrays ? the id to be refer for innerHTML is array_declaration
+            var fruits = ["Mango", "Papaya", "Watermelon"];
+            console.log(fruits);
+            document.getElementById("array_declaration").innerHTML=fruits;
+
+            //How to fetch the first element of the array ? the id to be refer for innerHTML is array_first_element
+            var firstfruit = fruits[0];
+            console.log(firstfruit);
+            document.getElementById("array_first_element").innerHTML=firstfruit;
+
+             //How to fetch the second element of the array ? the id to be refer for innerHTML is array_first_element
+             var secondfruit = fruits[1];
+            console.log(secondfruit);
+            document.getElementById("array_second_element").innerHTML=secondfruit;
+
+            var array_length = fruits.length;
+            console.log(array_length);
+            document.getElementById("array_length").innerHTML=array_length;
+
+            var array_loop = "";
+            for(i=0;i<fruits.length;i++){
+                console.log(fruits[i]);
+                array_loop=array_loop + fruits[i] + "<br>";
+            }
+            document.getElementById("array_loop").innerHTML=array_loop;
+
+            fruits.push("Pineapple");
+            console.log(fruits);
+            document.getElementById("array_elem_end").innerHTML=fruits;
+
+            var array_alpha = ["k","v","g","j","y"];
+            console.log(array_alpha);
+            document.getElementById("array_alpha").innerHTML=array_alpha;
+        </script>
+   
+</html>
